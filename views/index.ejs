@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts and Font Awesome for Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&family=Georgia:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>My Blog</title>
+</head>
+<body>
+  <h1><i class="fas fa-blog"></i> My Blog</h1>
+
+  <!-- Form to create a new post -->
+  <h2><i class="fas fa-pencil-alt"></i> Create a New Post</h2>
+  <form action="/create" method="POST">
+    <label for="title"><i class="fas fa-heading"></i> Title:</label>
+    <input type="text" name="title" required><br>
+    <label for="content"><i class="fas fa-align-left"></i> Content:</label>
+    <textarea name="content" required></textarea><br>
+    <button type="submit"><i class="fas fa-plus"></i> Create Post</button>
+  </form>
+
+  <!-- Display all posts -->
+  <h2><i class="fas fa-list"></i> All Posts</h2>
+  <ul>
+    <% posts.forEach(post => { %>
+      <li>
+        <h3><i class="fas fa-book"></i> <%= post.title %></h3>
+        <p><%= post.content %></p>
+        <form action="/delete/<%= post.id %>" method="POST" style="display: inline;">
+          <button type="submit" class="delete-button">
+            <i class="fas fa-trash-alt"></i> Delete
+          </button>
+        </form>
+        <a href="/edit/<%= post.id %>" class="edit-link">
+          <i class="fas fa-edit"></i> Edit
+        </a>
+      </li>
+    <% }); %>
+  </ul>
+
+  <!-- Font Awesome Script for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
