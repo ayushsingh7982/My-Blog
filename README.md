@@ -31,9 +31,11 @@ To run this project locally, follow these steps:
     cd My-Blog
 3. Install the dependencies:
    ```bash
-  npm install
+     npm install
 4.Start the server:
-  node app.js
+   ```bash
+   node app.js
+```
 5. Open your browser and navigate to http://localhost:3000
 
 ## Folder Structure
