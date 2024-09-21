@@ -34,7 +34,7 @@ To run this project locally, follow these steps:
      npm install
 4.Start the server:
    ```bash
-   node app.js
+      node app.js
 ```
 5. Open your browser and navigate to http://localhost:3000
 
