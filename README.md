@@ -27,8 +27,10 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/ayushsingh7982/My-Blog.git
 2. Navigate to the project directory:
+   ```bash
     cd My-Blog
 3. Install the dependencies:
+   ```bash
   npm install
 4.Start the server:
   node app.js
