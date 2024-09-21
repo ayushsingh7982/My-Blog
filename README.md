@@ -39,12 +39,13 @@ To run this project locally, follow these steps:
 5. Open your browser and navigate to http://localhost:3000
 
 ## Folder Structure
--node_modules/: Contains project dependencies
--public/css/: Custom CSS stylesheets
--routes/: Backend routes for handling HTTP requests
--views/: EJS templates for rendering dynamic content
--app.js: Main server file
--package.json: Project metadata and dependencies
+
+- **node_modules/**: Contains project dependencies
+- **public/css/**: Custom CSS stylesheets
+- **routes/**: Backend routes for handling HTTP requests
+- **views/**: EJS templates for rendering dynamic content
+- **app.js**: Main server file
+
 
 ## Contributing
 Feel free to submit issues and pull requests! Contributions are welcome.
